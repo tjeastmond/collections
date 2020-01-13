@@ -1,0 +1,57 @@
+{
+    "name": "collections",
+    "version": "1.0.0",
+    "description": "Simple JS collection library",
+    "main": "index.js",
+    "author": "TJ Eastmond <tj.eastmond@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "collection",
+        "collections",
+        "object",
+        "array"
+    ],
+    "eslintConfig": {
+        "extends": "airbnb"
+    },
+    "lint-staged": {
+        "src/**/*.{js,css}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.3",
+        "@babel/preset-env": "^7.8.3",
+        "babel-loader": "^8.0.6",
+        "chai": "^4.2.0",
+        "husky": "^4.0.7",
+        "jest": "^24.9.0",
+        "lint-staged": "^9.5.0",
+        "nyc": "^15.0.0",
+        "prettify": "^0.1.7",
+        "uglify-js": "^3.7.5",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    }
+}
